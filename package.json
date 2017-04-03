@@ -1,0 +1,21 @@
+{
+    "name": "gtfs-shape-router",
+    "version": "0.0.1",
+    "description": "Creates shapes for GTFS package using OSRM",
+    "main": "generate_shapes.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pailakka/gtfs-shape-router.git"
+    },
+    "author": "Teemu Peltonen / Finnish Transport Agency",
+    "license": "MIT",
+    "dependencies": {
+        "fast-csv": "^2.4.0",
+        "osrm": "^5.6.5",
+        "turf-simplify": "^3.0.12",
+        "unzip": "^0.1.11"
+    }
+}
