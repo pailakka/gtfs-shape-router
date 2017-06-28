@@ -15,7 +15,7 @@
     "dependencies": {
         "fast-csv": "^2.4.0",
         "osrm": "^5.8.0",
-        "turf-simplify": "^3.0.12",
+        "@turf/simplify": "^3.0.12",
         "unzip": "^0.1.11"
     }
 }

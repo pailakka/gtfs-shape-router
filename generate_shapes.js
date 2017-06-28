@@ -3,7 +3,7 @@ var unzip = require('unzip');
 var fs = require('fs');
 var path = require('path');
 var csv = require('fast-csv');
-var simplify = require('turf-simplify');
+var simplify = require('@turf/simplify');
 
 
 var osrm = new OSRM(process.argv[2]);
