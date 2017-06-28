@@ -7,7 +7,7 @@ Install docker and node:
 sudo apt-get update
 sudo apt-get -y upgrade
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs git
+sudo apt-get install -y nodejs git unzip zip
 ```
 
 Clone and install gtfs-shape-router
@@ -30,8 +30,10 @@ node generate_shapes.js <path to OSRM graph> <path to GTFS folder>
 
 
 For example:
-wget http://bussit.kuopio.fi/gtfs/gtfs.zip
-unzip 
-node generate_shapes.js ../finland-latest.osrm <path to GTFS folder>
-mv <path to GTFS folder>/trips_shape.txt <path to GTFS folder>/trips.txt
+wget -Okuopio-gtfs.zip http://bussit.kuopio.fi/gtfs/gtfs.zip
+unzip -d kuopio-gtfs kuopio-gtfs.zip
+node generate_shapes.js finland-latest.osrm kuopio-gtfs
+mv kuopio-gtfs/trips_shape.txt kuopio-gtfs/trips.txt
+cd kuopio-gtfs
+zip ../kuopio-gtfs-shape.zip *.txt
 ```
